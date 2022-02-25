@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PockerGameViewController: UIViewController {
 
     private var cards: [UIImageView] = []
     

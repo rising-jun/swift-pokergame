@@ -24,7 +24,18 @@ struct Players{
     }
     
     init(playerCount: PockerGame.PlayerCount){
-        for index in 0 ..< playerCount.getNumberOfPlayer(){
+        var range = 0
+        switch playerCount{
+        case .one:
+            range = 1
+        case .two:
+            range = 2
+        case .three:
+            range = 3
+        case .four :
+            range = 4
+        }
+        for index in 0 ..< range{
             players.append(Player(name: Players.playerNames[index]))
         }
     }
